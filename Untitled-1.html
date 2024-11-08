@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Combate Pokémon</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <audio src="audio/pokemon-opening.mp3" id="intro-audio"></audio>
+
+      <!-- Pantalla de inicio -->
+      <div id="pantalla_inicio" class="pantalla visible">
+        <button id="start-button" class="start-button">Iniciar partida</button>
+        <img class="intro" src="img/inicio.jpg">
+        
+    </div>
+   
+    
+    
+    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/027/127/591/non_2x/pokemon-logo-pokemon-icon-transparent-free-png.png">
+
+    <!-- Pantalla de selección de Pokémon -->
+    <div id="pantalla_seleccion" class="pantalla visible">
+        <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/241106/7cbd386a95b64b0d3d9cfb7b2ddbfc0c.png" alt="fuente-pokemon" border="0"></a>
+        <div id="pokemon-list" class="pokemon-list"></div>
+    </div>
+
+    <!-- Pantalla de enfrentamiento -->
+    <div id="pantalla_vs" class="pantalla">
+        <audio src="audio/pokemon-opening.mp3" autoplay></audio>
+
+        <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/241106/8f40d1dfc164a60056a987ee9c2327e4.png" alt="fuente-pokemon" border="0"></a>
+        <div class="vs-info">
+            <div class="pokemon-info">
+                <h3 id="nombre-jugador"></h3>
+                <img id="pokemon-jugador-img" class="pokemon-enfrentamiento" src="" alt="Imagen del Pokémon">
+                <p id="tipo-jugador"></p>
+            </div>
+            <h2 class="vs-title">
+                <img src="https://media.tenor.com/SLvoTpoJHeEAAAAi/versus-sfv.gif" alt="VS" class="gif-vs">
+            </h2>
+            <div class="pokemon-info">
+                <h3 id="nombre-oponente"></h3>
+                <img id="pokemon-oponente-img" class="pokemon-enfrentamiento" src="" alt="Imagen del Pokémon">
+                <p id="tipo-oponente"></p>
+            </div>
+        </div>
+        <button onclick="iniciarCombate()">Iniciar Combate</button>
+
+    </div>
+
+    <!-- Pantalla de Combate -->
+    <div id="pantalla_combate" class="pantalla">
+    
+
+       
+
+        <!-- Contenedor de Pokémon en combate -->
+        <div class="pokemon-combate">
+            <!-- Pokémon del Jugador -->
+            <div class="pokemon-lado">
+                <img id="combate-jugador-img" class="pokemon-enfrentamiento" src="" alt="Pokémon del Jugador">
+                <div class="vida-container jugador">
+                    <span id="vida-jugador-texto">100/100</span>
+                    <div id="vida-jugador" class="vida-barra"></div>
+                </div>
+            </div>
+
+            <!-- Pokémon del Oponente -->
+            <div class="pokemon-lado">
+                <img id="combate-oponente-img" class="pokemon-enfrentamiento" src="" alt="Pokémon del Oponente">
+                <div class="vida-container oponente">
+                    <span id="vida-oponente-texto">100/100</span>
+                    <div id="vida-oponente" class="vida-barra"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="historial-movimientos" class="historial-movimientos">
+            <h3>Historial de Movimientos</h3>
+            <ul id="lista-movimientos"></ul>
+            <button onclick="borrarHistorial()">Borrar Historial</button>
+        </div>
+        
+
+        <!-- Botón para volver a la selección de Pokémon -->
+        <button onclick="volverASeleccion()">Volver a Selección de Pokémon</button>
+
+
+        <!-- Notificación de Turno -->
+        <div id="turno-notificacion" class="turno-notificacion"></div>
+
+        <!-- Botones de Acción -->
+        <div class="acciones">
+            <button onclick="atacar()">Atacar</button>
+            <button onclick="curarse()">Curarse</button>
+            <button onclick="defender()">Defenderse</button>
+            <button onclick="ataqueEspecial()" id="boton-especial">Ataque Especial</button>
+        </div>
+    </div>
+    
+
+    <script src="js.js"></script>
+</body>
+</html>
