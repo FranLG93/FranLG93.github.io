@@ -1,0 +1,39 @@
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Cambios para pantallas medianas */
+    .bienvenida {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .texto-bienvenida {
+        margin-right: 1rem;
+    }
+
+    .lista-productos {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .contenido-historia {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .pie-superior,
+    .pie-inferior {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Cambios para pantallas grandes */
+    .texto-bienvenida h1 {
+        font-size: 2.5rem;
+    }
+
+    .pie-inferior {
+        justify-content: space-around;
+    }
+}
