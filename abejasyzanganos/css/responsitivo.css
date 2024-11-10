@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+    /* Encabezado en dispositivos móviles */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+        width: 130px;
+        margin-bottom: 10px;
+    }
+
+    .sierradegata, .bextre {
+        width: 60px;
+    }
+
+    .boton {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin: 5px 0;
+        border-radius: 20px;
+        text-align: center;
+    }
+        /* Ajuste específico para la barra de navegación */
+.boton.registrarse {
+    margin-top: 10px; /* Añade un espacio entre el botón de Registrarse y los otros botones */
+}
+
+/* Ajuste específico para la barra de botones debajo de las banderas */
+.nav-botones {
+    margin-top: 10px; /* Ajusta el valor para bajar los botones */
+}
+
+.carrito {
+    margin-top: 10px; /* Ajusta el valor para obtener el espaciado deseado */
+}
+
+
+    /* Pie de página en dispositivos móviles */
+    footer {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .pie-superior, .pie-inferior {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .redes-sociales img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Estilos unificados para tarjetas de productos */
+    .tarjeta-producto {
+        width: 90%;
+        max-width: 300px;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .tarjeta-producto img {
+        max-width: 100px;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .tarjeta-producto h2 {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .tarjeta-producto .precio {
+        font-size: 1rem;
+        color: #666;
+        margin: 0.5rem 0;
+    }
+
+    .tarjeta-producto button {
+        background-color: #6a0dad;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .tarjeta-producto button:hover {
+        background-color: #bba232ce;
+    }
+}
