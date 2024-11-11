@@ -1,0 +1,105 @@
+
+@import url('https//fonts.googleapis.com/css2?family=Monserrat:wght@100&dislay=swap!');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:Monserrat;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  
+  .menu {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu nav ul li {
+    margin-right: 20px;
+  }
+  
+  .menu nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+nav a:hover{
+    text-decoration: underline;
+    margin : 0px;
+    padding: 0px;
+    font-family:Monserrat;
+    color: rgb(149, 40, 58);
+    text-decoration: none;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #F7F9FA;
+
+}
+
+    .img {
+        display: flex;
+        justify-content: center;
+        
+      
+      }
+      
+      .img img {
+        width: 50%;
+        height: auto;
+        margin: 150px;
+        padding: 0;
+      }
+
+/*HEADER Y BARRA DE NAVEGACION SON IGUALES PARA TODOS LOS CSS*/
+
+h1{
+    color: #333;
+    text-align: center;
+    font-family:Monserrat;
+}
+
+
+
+p{
+    text-align: center;
+    font-family:Monserrat;
+    color: rgba(128, 128, 128, 0.668);
+}
+
+/*FOOTER*/
+
+footer {
+    font-family:Monserrat;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    
+  }
+  
+  footer p {
+    color: white;
+    margin-bottom: 10px;
+  }
+
+/*Francisco Luengo Gómez*/
