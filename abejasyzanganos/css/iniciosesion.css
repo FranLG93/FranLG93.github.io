@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.sierradegata,
+.bextre {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Botones de navegación */
+.boton {
+    padding: 0.5rem 1rem;
+    background-color: #bba232ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #6a0dad;
+    transition: 0.5s;
+}
+
+.carrito {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px; 
+}
+
+.carrito:hover {
+    width: 35px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+/* Barra */
+.nav-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0;
+    background-color: #bba232ce;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+}
+
+
+.botoon {
+    color: #eaeaea; /* Color del texto suave */
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 15px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.botoon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #b1781d; /* Color del subrayado */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.botoon:hover::after {
+    transform: scaleX(1); /* Subrayado se extiende de derecha a izquierda */
+    transform-origin: left;
+}
+
+.botoon:hover {
+    color:#b1781d; /* Cambio de color del texto en hover */
+}
+
+
+
+
+
+
+header nav a {
+    margin: 0 10px;
+}
+
+
+/*Estilo formulario inicio sesion*/
+.iniciosesion {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.iniciosesion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.iniciosesion label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.iniciosesion input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.iniciosesion input[type="submit"] {
+    background-color: #bba232ce; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.iniciosesion input[type="submit"]:hover {
+    background-color: #6a0dad; 
+    transition: 0.5s;
+}
+
+.iniciosesion p {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+
+.pie-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pie-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.pie-inferior h3 {
+    margin-bottom: 0.5rem;
+}
+
+.seccion-pie p {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-pie {
+    width: 150px; 
+    height: auto;
+
+}
+
+.logo-pie img {
+    width: 100%; 
+    height: auto;
+    border-radius: 3px; 
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.redes-sociales img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 5px; 
+}
+
